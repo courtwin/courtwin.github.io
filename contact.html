@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Website title -->
+    <title>Contact | Courtwin</title>
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-social.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+    
+<body>
+    <!-- Each section is organized inside a container class -->
+    <div class="contact-page" id="page-contact">
+        <!-- header -->
+        <div id="page-header"></div>
+        
+        <!-- content -->
+        <div class="padded-top">
+            <div id="about-body" class="container">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h1 class="text-center">Contact</h1>
+                        <p>Success may be many steps away, but connecting with us is a great first step.</p>
+                        <p>We are a global service based out of Pune.</p>
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <h3>Connect With Us</h3>
+                                <a class="btn btn-social-icon btn-facebook social-btn" href="https://www.facebook.com/courtwinorg/" target="_blank">
+                                    <span class="fa fa-facebook" aria-hidden="true"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-linkedin social-btn" href="https://www.linkedin.com/company/courtwin" target="_blank">
+                                    <span class="fa fa-linkedin" aria-hidden="true"></span>
+                                </a>
+                                <a class="btn btn-social-icon btn-instagram social-btn" href="https://www.instagram.com/risebeyondsuccess/" target="_blank">
+                                    <span class="fa fa-instagram" aria-hidden="true"></span>
+                                </a>
+                                <hr>
+                                <h3>Give Us A Call</h3>
+                                <p><span class="fa fa-phone fa-lg" style="padding-right:10px"></span> +91 915 841 9050</p>
+                                <p><span class="fa fa-clock-o fa-lg" style="padding-right:10px"></span> Monday - Friday: 09:30 AM to 06:30 PM</p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <h2 class="title-highlight">Send Us A Message</h2>
+                                        <p>Email us your information (name, phone, location, occupation) and we will get back to you. The email address is displayed in the image below.</p>
+                                        <img src="/images/info-email.png" alt="email address" style="padding: 20px 0;">
+                                        <p>We apoligize for this little step, but we need it to ensure we don't get spammed by bots.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- footer -->
+        <div id="page-footer"></div>
+    </div>
+    
+    <!-- scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/helper.js"></script>
+</body>
+
+<script>
+    // Make sure the background image is at least the screen height on loads
+    $(document).ready(function() {
+        pageLoad("/header.html", "page-header");
+        pageLoad("/footer.html", "page-footer");
+        var wh = $(window).height();
+        $("#page-contact").css({
+            'min-height': wh,
+        });
+    });  
+</script>
+</html>
