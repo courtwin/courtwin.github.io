@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Website title -->
+    <title>Entrepreneurs | Courtwin</title>
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap-social.css">
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/helper.js"></script>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+    
+<body>
+    <!-- Each section is organized inside a container class -->
+    <div class="prog-entrepreneurs" id="page-entrepreneurs">
+        <!-- header -->
+        <div id="page-header"></div>
+        
+        <!-- content -->
+        <div class="padded-top">
+            <div id="prog-entrepreneurs-body" class="container">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12 col-xs-12 text-center">
+                                <h1>Entrepreneurship Programs</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h3>The Premise</h3>
+                                <ul>
+                                    <li>Data we collected from hundreds of people over couple of years suggests more and more people want to work for themselves, but many aren't sure how to begin</li>
+                                    <li>Starting a business involves a lot of risks that are difficult to face when you are so used to taking home a monthly salary</li>
+                                    <li>There isn't much support (other than financial) for start-ups and entprepreneur-hopefuls</li>
+                                </ul>
+                                <h3>The Action</h3>
+                                <ul>
+                                    <li>Courtwin&trade; has coaching programs for entrepreneurs for setting up business strategies</li>
+                                    <li>Networking and contact-building programs to find customers and partners</li>
+                                    <li>Our success is your success. We stay with you till your business goals are achieved</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-md-5">
+                                <h3>Program Highlights</h3>
+                                <ul>
+                                    <li>Identify vision/mission for your venture</li>
+                                    <li>Create business model and strategy</li>
+                                    <li>Create a financial plan</li>
+                                    <li>Create a marketing strategy</li>
+                                    <li>Spread word about your product/services in the right way</li>
+                                    <li>Grow relationships that help you with your work</li>
+                                    <li>Increase your customer base</li>
+                                    <li>Create a supply of happy-to-pay clients</li>
+                                    <li>Become objective, rather than getting emotionally attached to your idea</li>
+                                    <li>Overcome the challenges you are facing in your business</li>
+                                    <li>Get weekly coaching sessions from our coaches</li>
+                                    <li>Look at some of the blind spots that you may have missed</li>
+                                    <li>Implement the best HR practices, including employee engagement, reward and recognition, etc.</li>
+                                    <li>Learn from success stories, and get tips from professionals</li>
+                                    <li>Avail meetings, discussions and talks from guest speakers</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="text-center"><a class="btn btn-primary btn-lg btn-cta" href="/contact.html">Contact Us Now</a></p>
+                        <p class="text-center" style="font-size: 12px;"><a href="/programs.html#back-to-progs">(Take me back, I'm not an Entrepreneur)</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    // Make sure the background image is at least the screen height on loads
+    $(document).ready(function() {
+        pageLoad("/header.html", "page-header");
+        var wh = $(window).height();
+        $("#page-entrepreneurs").css({
+            'min-height': wh,
+        });
+    });
+</script>
+</html>

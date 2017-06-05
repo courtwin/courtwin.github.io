@@ -1,0 +1,102 @@
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">X</button>
+    <h1 class="text-center">Get In Touch</h1>
+</div>
+<div class="modal-body">
+    <div class="text-left">
+        <p>Leave us a message and we'll get back to you.</p>
+        <p>Please fill out as many fields as you feel comfortable with. This will help us develop a program uniquely suited to your needs.</p>
+        <p><strong>Disclaimer:</strong> The information you provide is not shared with any party outside of Courtwin&trade; for any reason.</p>
+    </div>
+    <form class="form-horizontal" name="sentMessage" id="contact-form" novalidate>
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Name *</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="name" placeholder="Firstname Lastname" required data-validation-required-message="Please enter your name.">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">Email *</label>
+            <div class="col-sm-9">
+                <input type="email" class="form-control" id="email" placeholder="you@domain.com" required data-validation-required-message="Please enter your email address." data-validation-email-message="Please enter a valid email address.">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="phone" class="col-sm-3 control-label">Phone *</label>
+            <div class="col-sm-9">
+                <input type="number" class="form-control" id="phone" placeholder="Phone" required data-validation-required-message="Please enter your email address." data-validation-number-message="Please enter a valid phone number.">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">Sex</label>
+            <div class="col-md-9 text-left">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="sex-radio" id="radio-male" value="male">Male
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="sex-radio" id="radio-female" value="female">Female
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="age-group" class="control-label col-md-3">Age</label>
+            <div class="col-md-9">
+                <select class="form-control" id="age-group">
+                    <option>15 and Below</option>
+                    <option>16-23</option>
+                    <option selected>24-60</option>
+                    <option>61 and Above</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="country" class="control-label col-md-3">Country</label>
+            <div class="col-md-9">
+                <input type="text" class="form-control" id="country" placeholder="Your Country">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="city" class="control-label col-md-3">City</label>
+            <div class="col-md-9">
+                <input type="text" class="form-control" id="city" placeholder="Your City">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="employment" class="control-label col-md-3">Employment Status</label>
+            <div class="col-md-9">
+                <select class="form-control" id="employment">
+                    <option>Student</option>
+                    <option selected>Employed</option>
+                    <option>Self-employed</option>
+                    <option>Business person</option>
+                    <option>Homemaker</option>
+                    <option>Unemployed</option>
+                </select>
+            </div>
+        </div>
+        <div class="control-group form-group">
+            <label for="message" class="col-sm-3 control-label">Message</label>
+            <div class="col-sm-9">
+                <textarea class="form-control" rows="8" id="message" placeholder="Your Message" maxlength="999" style="resize:none"></textarea>
+            </div>
+        </div>
+        <div id="success"></div>
+        <div class="form-group">
+            <div class="col-md-offset-3 col-md-9 text-center">
+                <button type="submit" class="btn btn-default"><span class="fa fa-handshake-o fa-lg" style="padding-right: 10px"></span> I Want To Work With You</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $("#contact-form").bootstrapValidator({
+            
+        });
+    });
+</script>

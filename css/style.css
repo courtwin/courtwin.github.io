@@ -1,0 +1,204 @@
+/* Global CSS changes */
+html, body {
+    font-family: 'Lato', sans-serif;
+    font-size: 300;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+h1, h2, h2, h3, h4, h5, h6 {
+    font-family: 'Play', sans-serif;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    color: #000000;
+}
+
+.title-highlight {
+    color: #dc0000;
+}
+
+.btn:not(.social-btn) {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 24px;
+    margin: 20px 0;
+}
+
+.btn-cta {
+    font-family: 'Play', sans-serif;
+    background: linear-gradient(to bottom, rgba(220, 0, 0, 0.8), rgba(250, 0, 0, 0.8), rgba(220, 0, 0, 0.8));
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #ffffff;
+}
+
+.padded-top {
+    padding-top: 70px;
+}
+
+.panel, .panel-body, .thumbnail {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+    padding-bottom: 10px;
+}
+
+/* Changes for
+ * NAVBAR-INVERSE
+ */
+.navbar-inverse {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(255, 0, 0, 0.8), rgba(220, 0, 0, 0.8));
+    border-color: #080808;
+    border-bottom: 0;
+}
+
+.navbar-inverse .navbar-text {
+    color: #dddddd;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #dddddd;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #ffffff;
+}
+
+.navbar-brand {
+    padding-top: 8px;
+}
+
+/* Page changes for:
+ * HEADER
+ */
+
+.navbar-font {
+    font-family: 'Play', sans-serif;
+}
+
+/* Page changes for:
+ * HOME PAGE
+ */
+.home-page {
+    background: url("/images/home-bkg3.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*
+#home-body a.btn {
+    background: linear-gradient(to bottom, rgba(220, 0, 0, 0.8), rgba(250, 0, 0, 0.8), rgba(220, 0, 0, 0.8));
+    border: 0;
+    color: #ffffff;
+}
+*/
+
+#home-body h1,
+#home-body h2,
+#home-body h3,
+#home-body h4 {
+    color: #ffffff;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+/*
+ * PROGRAMS PAGE
+ */
+.programs-page {
+    background: url("/images/programs-bkg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.carousel-inner > .item > img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+/* Page changes for:
+ * PROGRAMS PAGE INNER PAGES
+ */
+.prog-students, .prog-employees, .prog-entrepreneurs {
+    background: url("/images/programs-bkg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Page changes for:
+ * ABOUT PAGE
+ */
+.about-page {
+    background: url("/images/about-bkg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Page changes for:
+ * CONTACT PAGE
+ */
+.contact-page {
+    background: url("/images/contact-bkg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Page changes for:
+ * BLOG PAGE
+ */
+.blog-page {
+    background: url("/images/blog-bkg.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+#blog-sidenav li a {
+    color: #000000;
+}
+
+#blog-sidenav .active {
+    font-weight: bold;
+    background-color: rgba(220, 220, 220, 0.6);
+    border-left: 5px solid #dc000;
+    border-radius: 5px;
+}
+
+
+#blog-sidenav .active li a,
+#blog-sidenav .active:hover li a,
+#blog-sidenav .active :focus li a {
+    border-left: 5px solid #dc000;
+    border-radius: 5px;
+}
+
+.scrollspy ul {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    line-height: 1.2;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.scrollspy ul li h3 {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.affix-target {
+    padding-top: 70px;
+    margin-top: -70px;
+    visibility: hidden;
+}
+
+/* Page changes for
+ * FOOTER
+ */
+.site-footer {
+    padding: 10px 0;
+    background: rgba(34, 34, 34, 0.8);
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+}
